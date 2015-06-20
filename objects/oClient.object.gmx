@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Initialise the client
-clientx = 64;   // player start X and Y
-clienty = 192;
+clientx = room_width / 2;   // player start X and Y
+clienty = 50;
 PlayerName=global.ServerName;   // get the name that was selected (it's a server OR player name)
 
 // Create a buffer for the network messages
@@ -194,6 +194,30 @@ for(i=0;i&lt;sprites;i++){
         </arguments>
       </action>
     </event>
+    <event eventtype="9" enumb="40">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Tell server DOWN was pressed
+SendKey(vk_down,1);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="9" enumb="39">
       <action>
         <libid>1</libid>
@@ -213,6 +237,30 @@ for(i=0;i&lt;sprites;i++){
             <kind>1</kind>
             <string>/// Tell server RIGHT was pressed
 SendKey(vk_right,1);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="38">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Tell server UP was pressed
+SendKey(vk_up,1);
 </string>
           </argument>
         </arguments>
@@ -266,6 +314,30 @@ SendKey(vk_space,1);
         </arguments>
       </action>
     </event>
+    <event eventtype="10" enumb="40">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Tell server DOWN was released
+SendKey(vk_down,0);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="10" enumb="39">
       <action>
         <libid>1</libid>
@@ -285,6 +357,30 @@ SendKey(vk_space,1);
             <kind>1</kind>
             <string>/// Tell server RIGHT was released
 SendKey(vk_right,0);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="38">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Tell server UP was released
+SendKey(vk_up,0);
 </string>
           </argument>
         </arguments>
