@@ -104,16 +104,8 @@ global.BaddieCount--;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Kill baddie when player hits it!
-
-// Make sure we're not colliding over and over again!
-if( hit ) exit;
-
-// Flag as hit, and set the gravity mover to UP.
-hit = true;
-
-
-
+            <string>/// Kill baddie when bullet hits it!
+event_inherited();
 </string>
           </argument>
         </arguments>
@@ -137,15 +129,7 @@ hit = true;
           <argument>
             <kind>1</kind>
             <string>/// Kill baddie when player hits it!
-
-// Make sure we're not colliding over and over again!
-if( hit ) exit;
-
-// Flag as hit, and set the gravity mover to UP.
-hit = true;
-
-
-
+event_inherited();
 </string>
           </argument>
         </arguments>
