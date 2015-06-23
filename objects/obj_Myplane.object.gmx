@@ -100,7 +100,7 @@ global.PlayerTotal++;
             <string>/// Process the player (move+collision)
 var xx,yy,c1,c2,bullet;
 
-/// Do payer "jump"
+/// Do player "shoot"
 if( can_shoot ) 
 {
     if( keys[FIRE_KEY] ) {
