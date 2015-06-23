@@ -42,8 +42,11 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
+    <font>fonts\fName</font>
   </fonts>
   <objects name="objects">
+    <object>objects\xoPlayer</object>
+    <object>objects\xoBaddie</object>
     <object>objects\oPlayer</object>
     <object>objects\oBaddie</object>
     <object>objects\oPuff</object>
@@ -60,6 +63,7 @@
     <object>objects\obj_Island2</object>
     <object>objects\obj_Island3</object>
     <object>objects\obj_Myplane</object>
+    <object>objects\object19</object>
     <object>objects\obj_Hisplane</object>
     <object>objects\obj_Player_Bullet</object>
     <object>objects\obj_Explosion1</object>
@@ -67,8 +71,8 @@
     <object>objects\obj_Enemy1</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_MainGame</room>
     <room>rooms\Menu</room>
+    <room>rooms\rm_MainGame</room>
   </rooms>
   <constants number="10">
     <constant name="NETWORK_LOGIN">0</constant>
@@ -76,11 +80,11 @@
     <constant name="PING_CMD">2</constant>
     <constant name="LEFT_KEY">0</constant>
     <constant name="RIGHT_KEY">1</constant>
-    <constant name="JUMP_KEY">2</constant>
+    <constant name="UP_KEY">2</constant>
+    <constant name="DOWN_KEY">3</constant>
+    <constant name="FIRE_KEY">4</constant>
     <constant name="KEY_CMD">0</constant>
     <constant name="NAME_CMD">1</constant>
-    <constant name="GM_build_date">0</constant>
-    <constant name="GM_version">0</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

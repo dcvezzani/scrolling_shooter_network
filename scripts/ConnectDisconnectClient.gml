@@ -16,7 +16,7 @@
         ds_list_add( socketlist, sock );
 
         // Create a new player, and pick a random colour for that player        
-        var inst = instance_create(64,192, oPlayer);
+        var inst = instance_create(288,352, oPlayer);
         inst.image_blend = ColourArray[colourindex];
         colourindex = (colourindex+1) & 15;
 

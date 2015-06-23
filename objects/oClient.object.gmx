@@ -182,7 +182,7 @@ for(i=0;i&lt;sprites;i++){
     draw_set_color(c_white);
     draw_set_font(fName);
     draw_set_halign(fa_center);
-    draw_text(xx+16,yy-20,name);
+    draw_text(xx,yy+25,name);
 }
 
 
